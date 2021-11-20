@@ -1,0 +1,318 @@
+@media (max-width: 1300px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .table__heading_full-name {
+    width: 22.8%;
+  }
+
+  .table__heading_date-created {
+    width: 16.5%;
+  }
+
+  .table__heading_date-edit {
+    width: 14.9%;
+  }
+
+  .table__heading_contacts {
+    width: 15.5%;
+  }
+
+  .table__heading_actions {
+    width: 100%;
+  }
+
+  .table__heading-btn_date-created {
+    max-width: 80px;
+    text-align: start;
+  }
+
+  .table__heading-btn-icon_date-created {
+    right: 13px;
+  }
+
+  .table__heading-btn_date-edit {
+    max-width: 80px;
+    text-align: start;
+  }
+
+  .table__heading-btn-icon_date-edit {
+    right: 0;
+  }
+
+  .table__date {
+    margin-right: 10px;
+  }
+
+  .table__cell_fullname {
+    padding-right: 10px;
+  }
+
+  .table__cell_contacts {
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 1023px) {
+
+  .table__heading_full-name {
+    width: 27.5%;
+  }
+
+  .table__heading_date-created {
+    width: 13.5%;
+  }
+
+  .table__heading_date-edit {
+    width: 13.5%;
+  }
+
+  .table__heading_contacts {
+    width: 19%;
+  }
+
+  .table__heading_actions {
+    width: 14.6%;
+  }
+
+  .table__date-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .table__date {
+    margin-right: 0;
+  }
+
+  .table__cell_contacts {
+    padding-right: 21px;
+  }
+
+  .table__cell_actions {
+    padding: 5px 5px 0 0;
+  }
+
+  .table__btn-actions_edit {
+    margin-right: 0;
+    margin-bottom: 9px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .header {
+    height: 40px;
+  }
+
+  .header__logo {
+    width: 24px;
+    height: 24px;
+  }
+
+  .header__logo-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .search__input {
+    min-width: 300px;
+    height: 30px;
+  }
+
+  .clients {
+    padding: 18px 0;
+  }
+
+  .clients__container {
+    padding: 0;
+  }
+
+  .clients__header {
+    margin-bottom: 10px;
+    padding-left: 15px;
+    font-size: 20px;
+  }
+
+  .clients__table-sort {
+    display: block;
+    margin-bottom: 20px;
+    padding-left: 15px;
+  }
+
+  .table__head-row {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    width: 100%;
+  }
+
+  .table__heading {
+    margin-bottom: 11px;
+    padding: 0;
+    width: 100%;
+  }
+
+  .table__heading_date-edit {
+    margin-bottom: 15px;
+  }
+
+  .table__heading_contacts,
+  .table__heading_actions {
+    display: none;
+  }
+
+  .table__heading-btn_date-edit,
+  .table__heading-btn_date-created {
+    max-width: none;
+  }
+
+  .table__heading-btn-icon_date-created,
+  .table__heading-btn-icon_date-edit {
+    right: -12px;
+  }
+
+  .table__cell {
+    display: inline-flex;
+    align-items: center;
+    padding: 0;
+    height: 59px;
+  }
+
+  .table__cell_id {
+    padding-left: 15px;
+    min-width: 110px;
+  }
+
+  .table__cell_fullname {
+    position: relative;
+    padding-right: 41px;
+    width: calc(100% - 110px);
+    cursor: pointer;
+  }
+
+  .table__cell_fullname::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 12px;
+    bottom: 0;
+    display: block;
+    width: 26px;
+    background-image: url(../img/icon-mobile-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(180deg);
+    transition: transform .2s ease-in-out;
+  }
+
+  .table__cell_fullname-drop-open::after {
+    transform: rotate(0);
+  }
+
+  .table__cell_date-edit {
+    height: 31px;
+  }
+
+  .table__cell_date-created,
+  .table__cell_date-edit,
+  .table__cell_contacts,
+  .table__cell_actions {
+    border: none;
+    padding: 0 15px;
+    width: 100%;
+    background-color: rgba(200, 197, 209, .2);
+  }
+
+  .table__cell_date-created {
+    padding: 7px 15px 0;
+    height: 40px;
+  }
+
+  .table__cell_date-edit {
+    height: 27px;
+  }
+
+  .table__cell_contacts {
+    height: 40px;
+    padding-right: 131px;
+  }
+
+  .table__cell_actions {
+    height: 39px;
+  }
+
+  .table__drop {
+    display: none;
+  }
+
+  .table__drop_open {
+    display: flex;
+  }
+
+  .table__date-wrapper {
+    flex-direction: row;
+  }
+
+  .table__discr-cell {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .table__date {
+    margin-right: 7px;
+  }
+
+  .table__contacts-list {
+    max-width: 350px;
+  }
+
+  .table__btn-actions_edit {
+    margin-right: 31px;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .header__logo {
+    margin: 0 auto;
+  }
+
+  .search__input {
+    display: none;
+    min-width: 300px;
+  }
+
+  .form {
+    width: 300px;
+  }
+
+  .form__btn-close {
+    position: absolute;
+    top: 2px;
+    right: 3px;
+  }
+
+  .form__up {
+    padding: 0 15px;
+  }
+
+  .form__client-id {
+    position: absolute;
+    top: 44px;
+    left: 16px;
+  }
+
+  .form__contacts_list {
+    padding: 0 15px;
+  }
+
+  .form__contacts_list-active {
+    padding: 25px 15px 17px;
+  }
+}
